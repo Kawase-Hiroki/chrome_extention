@@ -1,0 +1,8 @@
+{
+    "manifest_version": 3,
+    "name": "Extention name",
+    "version": "1.0.0.0",
+    "default_locale": "ja_JP",
+    "description": ""
+}
+
