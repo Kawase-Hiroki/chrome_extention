@@ -1,8 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "Extention name",
-    "version": "1.0.0.0",
+    "name": "Save Secret Tab",
+    "version": "1.0.0",
     "default_locale": "ja_JP",
-    "description": ""
+    "description": "Save the contents of secret tabs so that they can be displayed when the tab is reopened",
+
+    "content_scripts":[
+        {
+            "js":[
+                "content.js"
+            ]
+        }
+    ]
 }
 
