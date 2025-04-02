@@ -1,4 +1,4 @@
-const create_text = (title, url, templete) => {
+const createTextFromTemplate = (title, url, templete) => {
     let txt = templete;
 
     txt = txt.replace(/%%title%%/g,title);
@@ -17,7 +17,7 @@ const run = () => {
         tabs.forEach((tab,i) => {
             if(i!=0) txt += delimiter;
             console.log(tab.title+" "+tab.url);
-            txt += create_text(tab.title,tab.url,templete);
+            txt += createTextFromTemplate(tab.title,tab.url,templete);
         })
 
         document.querySelector('#txt').value = txt;
