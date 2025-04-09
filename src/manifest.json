@@ -8,7 +8,7 @@
       "webNavigation"
     ],
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "content.js"
     },
     "action": {
       "default_popup": "popup.html"
