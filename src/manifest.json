@@ -1,20 +1,18 @@
 {
     "manifest_version": 3,
-    "name": "Tab Tracker",
+    "name": "Tab Info Manager",
     "version": "1.0",
+    "description": "タブの情報を保存・復元・削除できる拡張機能",
     "permissions": [
       "tabs",
       "storage",
       "webNavigation"
     ],
     "background": {
-      "service_worker": "content.js"
+      "service_worker": "background.js"
     },
     "action": {
       "default_popup": "popup.html"
-    },
-    "host_permissions": [
-      "<all_urls>"
-    ]
+    }
   }
   

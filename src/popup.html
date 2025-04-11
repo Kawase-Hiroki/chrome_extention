@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Tab Tracker</title>
+  <title>タブ管理</title>
   <style>
-    textarea { width: 100%; height: 200px; }
+    body {font-family: sans-serif;padding: 10px;width: 300px;}
+    .button-group {display: flex;gap: 10px;margin-bottom: 10px;}
+    button {flex: 1;padding: 8px;font-size: 14px;cursor: pointer;}
+    pre {background: #f0f0f0;padding: 10px;height: 200px;overflow: auto;font-size: 12px;}
   </style>
 </head>
 <body>
-  <h2>タブ一覧</h2>
-  <input type="text" id="numOfTabs" readonly />
-  <br />
-  <textarea id="txt"></textarea>
-  <br />
-  <button id="copy">コピー</button>
-
+  <h2>タブ管理</h2>
+  <button id="show">保存されたデータを見る</button><br>
+  <button id="clear">すべての保存データを削除</button><br>
+  <pre id="output"></pre>
   <script src="popup.js"></script>
 </body>
 </html>
